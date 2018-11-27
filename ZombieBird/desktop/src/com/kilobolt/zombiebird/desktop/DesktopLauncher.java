@@ -1,12 +1,16 @@
-package com.mygdx.zombiebird.desktop;
+package com.kilobolt.zombiebird.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.mygdx.zombiebird.ZombieBird;
+import com.kilobolt.zombiebird.ZombieBirdGame;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new ZombieBird(), config);
+		config.title = "Zombie Bird";
+		config.width = 272;
+		config.height = 408;
+		new LwjglApplication(new ZombieBirdGame(), config);
 	}
 }
+

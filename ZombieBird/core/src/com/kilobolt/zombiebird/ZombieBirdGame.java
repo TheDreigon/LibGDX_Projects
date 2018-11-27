@@ -1,20 +1,19 @@
-package com.mygdx.zombiebird;
+package com.kilobolt.zombiebird;
 
-import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.screens.GameScreen;
+import com.kilobolt.screens.GameScreen;
 
-public class ZombieBird extends Game {
+public class ZombieBirdGame extends Game {
 	SpriteBatch batch;
 	Texture img;
 	
 	@Override
 	public void create () {
-		Gdx.app.log("ZombieBird Game", "created");
+		Gdx.app.log("ZombieBirdGame Game", "created");
 		setScreen(new GameScreen());
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
